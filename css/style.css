@@ -1,4 +1,4 @@
-/****** General ***********/
+/****** General donné de base ***********/
 * {
     font-family: 'Raleway', sans-serif;
 }
@@ -57,6 +57,43 @@ a {
 .neutral-star {
     color: var(--main-bg-color)
 }
+
+/****** General en plus ***********/
+
+body {
+    margin: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    gap: 35px;
+}
+
+/********************************** nav et header*********************************/
+.LogoBooki {
+    width: 61.09px;
+    height: 19px;
+    padding: 30px 50px 30px 50px;
+    gap: 10px;
+    margin: 0;
+}
+
+.menu {
+    padding: 0px 50px 0px 50px;
+    gap: 68px;
+    left: 1096px;
+}
+
+nav li:hover {
+    border-top: 2px solid #0065FC;
+    justify-content: flex-end;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 16px;
+}
+
+
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
