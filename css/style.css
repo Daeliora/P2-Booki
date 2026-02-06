@@ -373,7 +373,41 @@ h1 {
     margin-bottom: 5px;
 }
 
+/**********************************activités à marseilles**********************/
 
+.activites {
+    padding: 30px;
+    gap: 30px;
+}
+
+.activites-card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.activites-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 60px;   /* ça à l'air d'être 2 fois 30px*/
+    margin-bottom: 30px;
+}
+
+.activites-card img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 380px;
+    width: 297.5px;
+}
+
+.activites-card .card {
+    border-radius: 20px;
+    height: 380px;
+    width: 297.5px;
+}
+
+.activites-card .card-title {
+    padding: 20px 19px 20px 19px;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
