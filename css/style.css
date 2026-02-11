@@ -78,12 +78,13 @@ header {
 
 .logo {
 height: 20px;
-margin-left: -40px;
+margin-left: -37px;
 }
 
 .menu {
   display: flex;
   gap: 30px;
+  margin-right: -40px;
 }
 
 .menu-item {
@@ -388,6 +389,7 @@ h1 {
 .activites {
     padding: 30px;
     gap: 30px;
+    margin-bottom: 110px;
 }
 
 .activites-card {
@@ -411,46 +413,72 @@ h1 {
 
 .activites-card .card {
     border-radius: 20px;
-    height: 380px;
+    height: 439px;
     width: 297.5px;
 }
 
 .activites-card .card-title {
-    padding: 20px 19px 20px 19px;
+    padding: 0px 19px 20px 19px;
 }
 
 /********************************footer*******************************/
 
-.footer-container {
+footer {
     background-color: #F2F2F2;
+    max-width: 1340px;
+}
+
+.footer-container {
     gap: 15px;
     padding: 20px;
-    margin-top: 90px;
+    margin-top: 70px;
     
     display: flex;
-    justify-content: space-between
+    justify-content: flex-start; /* Aligne au début */
+    gap: 150px;
+    max-width: 1200px;
 
     /*display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;*/
 }
 
-.footer-title {
+.footer-column h3 {
     font-size: 18px;
     margin-bottom: 20px;
 }
 
-.footer-content {
+.footer-column ul {
+    list-style: none;
     font-size: 16px;
     font-weight: 400;
     display: flex; 
-    flex-wrap: wrap; /*retour à la ligne */
+    flex-wrap: wrap; 
+    padding: 0;
     margin: 0;
 }
 
 .footer-column {
     flex: 1; /* Chaque colonne prend un tiers de l'espace */
 }
+
+.footer-column li {
+  margin-bottom: 12px; 
+  max-width: 200px;
+}
+
+
+
+/* Adaptabilité mobile (responsive) */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column; /* Colonnes les unes sous les autres sur mobile */
+    gap: 30px;
+  }
+}
+
+
+
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
