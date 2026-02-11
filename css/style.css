@@ -129,93 +129,64 @@ h1 {
     font-weight: 400;
 }
 
-.info-bubble {
-    display: inline-flex; /*la largeur s'adapte au contenu */
-    align-items: center; /* alignement vertical */
-    font-size: 16px;
-    max-width: fit-content; /* largeur ajustée au contenu */
-    gap: 10px;
-    margin-top: 35px;
-    margin-bottom: 35px;
+.info-group {
+    gap: 35px;
+    display: block;
+
 }
 
-.info-icon {
-    color: #0065FC; 
-    border-radius: 50%; /* Forme ronde */
-    border: 1px solid #d9d9d9;
-    width: 24px;
-    height: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 10px; /* Taille de l'icône */ 
-}
-
-.info-text {
-    color: #000000; 
-}
-
+    /**Partie barre recherche**/
 .search-bar {
-    display: flex; /* alignement horizontal */
-    align-items: center;
-    background: #FFFFFF; 
-    border-color: #F2F2F2;
-    border: 1px;
-    border-radius: 15px; 
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* on ne voit plus le border sans ????? */
-    width: 377px;
-    height: 49px;
-    gap: 12px;
-    margin-top: 35px;
-}
-
-.location-input {
     display: flex;
     align-items: center;
-    border: 2px #F2F2F2;
+    border: 1px solid #f2f2f2;
+    border-radius: 15px;
+    /*overflow:hidden; /* pour que tout reste bien dans le bloc */
+    width: fit-content;
+    font-family: Raleway;
+    margin-top: 30px;
+}
+
+.search-bar .icon i {
+    background-color: #f2f2f2;
+    border: 1px #F2F2F2;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    width: 195px;   /* 377-50-132=195*/ 
-    height: 49px;
-  
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    font-size: 18px;
 }
 
-.location-icon {
-    color: black; 
-    font-size: 14px;
-    margin-left: 18px;
-    margin-top: 15px;
-    width: 14px;
-    height: 18px;
-}
-
-.location-text-input {
+.search-bar input {
+    border: none;
+    outline: none; /* enlève la bordure de base*/
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
     text-align: center;
     align-content: center;
-    border: none; /* Pas la bordure par défaut */
-    font-family: Raleway;
-    font-size: 18px;
-    color: black;
-    line-height: 100%;
-    
 }
 
-.search-button {
-    background: #0065FC; 
-    color: white; 
-    border: 1px #0065FC;
+.search-bar button {
+    background-color: #0065fc;
+    border: 1px #0065fc;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    padding: 15px 16px 15px 16px;
-    font-family: Raleway;
-    font-weight: 700;
-    font-size: 18px;
-    width: 132px;
-    height: 49px;
-    gap: 10px;
-    margin: 50px; /*donner à vue pour que ça ressemble*/
+    color: white;
+    border: none;
+    padding: 15px 18px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer; /*pour cliquer*/
 }
 
+
+
+
+    /**partie filtres**/
 .filters-container {
     display: flex;
     align-items: center;
@@ -260,14 +231,35 @@ h1 {
     font-size: 20px;
 }
 
-.info-group {
-    gap: 35px;
-    display: block;
 
+    /**Bulle d'info**/
+.info-bubble {
+    display: inline-flex; /*la largeur s'adapte au contenu */
+    align-items: center; /* alignement vertical */
+    font-size: 16px;
+    max-width: fit-content; /* largeur ajustée au contenu */
+    gap: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
+.info-icon {
+    color: #0065FC; 
+    border-radius: 50%; /* Forme ronde */
+    border: 1px solid #d9d9d9;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px; /* Taille de l'icône */ 
+}
 
-/****** Hebergements And Populaires ***********/
+.info-text {
+    color: #000000; 
+}
+
+/****** Hebergements And Populaires donné de base  ***********/
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
@@ -330,6 +322,7 @@ h1 {
     margin: 0;
     font-size: 14px;
     font-weight: 400;
+    margin-bottom: 5px;
 }
 
 .houses-cards .card-rating {
