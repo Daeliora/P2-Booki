@@ -282,6 +282,8 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 .houses-cards {
@@ -289,7 +291,7 @@ h1 {
     margin-top: 33px;
     flex-wrap: wrap;
     align-content: space-between;
-    gap: 4px;
+    gap: 30px;
     padding-bottom: 15px;
 }
 
@@ -297,12 +299,13 @@ h1 {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     height: 124px;
+    
     width: 250px;
     object-fit: cover;
 }
 
 .houses-cards .card-content {
-    width: 67%;
+    width: 80%;
     padding-left: 15px;
     display: flex;
     flex-direction: column;
@@ -333,8 +336,9 @@ h1 {
 .more {
     font-size: 18px;
     font-weight: 700;
-    width: 811px;
+    width: 200px;
     height: 21px;
+    cursor: pointer; /*pour cliquer*/
 }
 
 
@@ -395,6 +399,7 @@ h1 {
 .activites-card {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    flex-wrap: wrap;
 }
 
 .activites-title {
