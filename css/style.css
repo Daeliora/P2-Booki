@@ -68,40 +68,55 @@ body {
 }
 
 /********************************** nav et header*********************************/
-.LogoBooki {
-    width: 61.09px;
-    height: 19px;
-    padding: 30px 50px 30px 50px;
-    gap: 10px;
-    margin: 0;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  margin-bottom: 30px;
+}
+
+.logo {
+height: 20px;
+margin-left: -40px;
 }
 
 .menu {
-    padding: 0px 50px 0px 50px;
-    gap: 68px;
-    left: 1096px;
+  display: flex;
+  gap: 30px;
 }
 
-nav li:hover {
-    border-top: 2px solid #0065FC;
-    justify-content: flex-end;
+.menu-item {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  padding-top: 0px;
 }
 
-ul {
-    display: flex;
-    list-style: none;
-    gap: 16px;
+/* barre bleue cachée par défaut */
+.menu-item::before {
+  content: "";
+  position: absolute;
+  top: -21px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #0065fc;
+  opacity: 0;
+
+}
+
+/* effet hover */
+.menu-item:hover {
+  color: #0065fc;
+}
+
+.menu-item:hover::before {
+  opacity: 1;
 }
 
 /***************************************Partie Infos**********************************/
 
-nav {
-    display:flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-direction: row;
-    height: 79px;
-}
 
 h1 {
     font-size: 22px;
@@ -157,12 +172,12 @@ h1 {
 .location-input {
     display: flex;
     align-items: center;
-    border: 1px #F2F2F2;
+    border: 2px #F2F2F2;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     width: 195px;   /* 377-50-132=195*/ 
     height: 49px;
-    background: transparent;
+  
 }
 
 .location-icon {
@@ -219,19 +234,20 @@ h1 {
 .filter-buttons {
     display: flex;
     gap: 10px; 
-    height: 50px;
+    height: 45px;
 }
 
 .filter-button {
     display: flex;
     align-items: center;
-    gap: 10px;      /* espace entre l'icône et le texte */
+    gap: 15px;      /* espace entre l'icône et le texte */
     padding: 4px 19px 4px 19px;
     background: white;
     border: 2px solid #d9d9d9;
     border-radius: 25px; 
     color: #000000;
     font-size: 14px;
+    font-weight: 700;
 }
 
 .filter-button:hover {
@@ -241,6 +257,7 @@ h1 {
 
 .filter-button i {
     color: #0065FC; 
+    font-size: 20px;
 }
 
 .info-group {
