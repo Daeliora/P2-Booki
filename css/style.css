@@ -186,7 +186,6 @@ h1 {
 
 
 
-
     /**partie filtres**/
 .filters-container {
     display: flex;
@@ -205,7 +204,7 @@ h1 {
 
 .filter-buttons {
     display: flex;
-    gap: 10px; 
+    gap: 15px; 
     height: 45px;
 }
 
@@ -291,7 +290,7 @@ h1 {
     margin-top: 33px;
     flex-wrap: wrap;
     align-content: space-between;
-    gap: 30px;
+    gap: 25px;
     padding-bottom: 15px;
 }
 
@@ -299,13 +298,12 @@ h1 {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     height: 124px;
-    
-    width: 250px;
+    width: 220px;
     object-fit: cover;
 }
 
 .houses-cards .card-content {
-    width: 80%;
+    width: 90%;
     padding-left: 15px;
     display: flex;
     flex-direction: column;
@@ -428,56 +426,30 @@ h1 {
 
 /********************************footer*******************************/
 
-footer {
-    background-color: #F2F2F2;
-    max-width: 1340px;
-}
-
-.footer-container {
-    gap: 15px;
-    padding: 20px;
-    margin-top: 70px;
-    
-    display: flex;
-    justify-content: flex-start; /* Aligne au début */
-    gap: 150px;
-    max-width: 1200px;
-
-    /*display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;*/
+.footer {
+  display: flex;           
+  background-color: #f2f2f2;
+  padding: 20px;           
+  gap: 300px;               /* espace entre les colonnes */
 }
 
 .footer-column h3 {
-    font-size: 18px;
-    margin-bottom: 20px;
+  font-weight: bold;
+  margin-bottom: 20px; 
+
 }
 
-.footer-column ul {
-    list-style: none;
-    font-size: 16px;
-    font-weight: 400;
-    display: flex; 
-    flex-wrap: wrap; 
-    padding: 0;
-    margin: 0;
-}
+.footer-column p {
 
-.footer-column {
-    flex: 1; /* Chaque colonne prend un tiers de l'espace */
-}
-
-.footer-column li {
-  margin-bottom: 12px; 
-  max-width: 200px;
+  margin-bottom: 10px;         
 }
 
 
 
 /* Adaptabilité mobile (responsive) */
 @media (max-width: 768px) {
-  .footer-container {
-    flex-direction: column; /* Colonnes les unes sous les autres sur mobile */
+  .footer {
+    flex-direction: column; 
     gap: 30px;
   }
 }
