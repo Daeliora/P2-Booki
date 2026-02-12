@@ -136,57 +136,46 @@ h1 {
 
 }
 
-    /**Partie barre recherche**/
+    /**********Partie barre recherche************/
 .search-bar {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    border: 1px solid #f2f2f2;
-    border-radius: 15px;
-    /*overflow:hidden; /* pour que tout reste bien dans le bloc */
-    width: fit-content;
-    font-family: Raleway;
-    margin-top: 30px;
+    background-color: #f2f2f2; /* zone de l'icône */
+    border-radius: 15px;       
+    overflow: hidden;          /* Pour que le bouton ne dépasse pas des arrondis */
 }
 
-.search-bar .icon i {
-    background-color: #f2f2f2;
-    border: 1px #F2F2F2;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
+.icon-container {
     padding: 15px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #000000;
-    font-size: 18px;
+    background-color: #f2f2f2;
+    color: #000;
 }
 
-.search-bar input {
+.search-input {
     border: none;
-    outline: none; /* enlève la bordure de base*/
-    padding: 12px;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    align-content: center;
-}
-
-.search-bar button {
-    background-color: #0065fc;
-    border: 1px #0065fc;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    color: white;
-    border: none;
-    padding: 15px 18px;
+    outline: none;
+    padding: 15px;
     font-size: 16px;
     font-weight: bold;
-    cursor: pointer; /*pour cliquer*/
+    background-color: white; /* Fond blanc pour la saisie */
+    color: black;
+    width: 160px;
+}
+
+.search-button {
+    background-color: #0065FC; 
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0 15px 15px 0; 
 }
 
 
 
-    /**partie filtres**/
+    /******************partie filtres*****************/
 .filters-container {
     display: flex;
     align-items: center;
@@ -272,7 +261,7 @@ h1 {
     box-sizing: border-box;
 }
 
-/****** Hebergements ***********/
+/***************************************** Hebergements ****************************************/
 .hebergements {
     width: 65%;
 }
@@ -341,7 +330,7 @@ h1 {
 
 
 
-/****** Populaires ***********/
+/***************************************** Populaires *************************************/
 .populaires {
     width: 32%;
 }
@@ -391,13 +380,14 @@ h1 {
 .activites {
     padding: 30px;
     gap: 30px;
-    margin-bottom: 110px;
+    margin-bottom: 40px;
 }
 
 .activites-card {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     flex-wrap: wrap;
+    gap: 10px;
 }
 
 .activites-title {
@@ -411,13 +401,13 @@ h1 {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     height: 380px;
-    width: 297.5px;
+    width: 100%;
 }
 
 .activites-card .card {
     border-radius: 20px;
-    height: 439px;
-    width: 297.5px;
+    height: 436px;
+    width: 96%;
 }
 
 .activites-card .card-title {
@@ -430,7 +420,7 @@ h1 {
   display: flex;           
   background-color: #f2f2f2;
   padding: 20px;           
-  gap: 300px;               /* espace entre les colonnes */
+  gap: 300px;       /* espace entre les colonnes */
 }
 
 .footer-column h3 {
@@ -440,7 +430,6 @@ h1 {
 }
 
 .footer-column p {
-
   margin-bottom: 10px;         
 }
 
