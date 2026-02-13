@@ -393,7 +393,6 @@ h1 {
 .activites-card {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    flex-wrap: wrap;
     gap: 15px;
     background-color: white;
 }
@@ -408,14 +407,14 @@ h1 {
 .activites-card img {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    height: 380px;
+    height: 85%;
     width: 100%;
 }
 
 .activites-card .card {
     border-radius: 20px;
     height: 436px;
-    width: 96%;
+    width: 100%;
     padding: 0px;
 }
 
