@@ -387,7 +387,6 @@ h1 {
 
 .activites {
     padding: 30px;
-    gap: 30px;
     margin-bottom: 40px;
 }
 
@@ -395,7 +394,7 @@ h1 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 15px;
     background-color: white;
 }
 
