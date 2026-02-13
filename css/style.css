@@ -79,6 +79,7 @@ header {
 .logo {
 height: 20px;
 margin-left: -37px;
+margin-top: 5px;
 }
 
 .menu {
@@ -98,7 +99,7 @@ margin-left: -37px;
 .menu-item::before {
   content: "";
   position: absolute;
-  top: -21px;
+  top: -23px;
   left: 0;
   width: 100%;
   height: 2px;
@@ -138,11 +139,13 @@ h1 {
 
     /**********Partie barre recherche************/
 .search-bar {
+    margin-top: 15px;
     display: inline-flex;
     align-items: center;
     background-color: #f2f2f2; /* zone de l'icône */
     border-radius: 15px;       
     overflow: hidden;          /* Pour que le bouton ne dépasse pas des arrondis */
+    border: 1px solid #f2f2f2;
 }
 
 .icon-container {
@@ -184,7 +187,7 @@ h1 {
 .filters-container {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
     font-family: Raleway;
     margin-top: 35px;
 }
@@ -198,20 +201,20 @@ h1 {
 
 .filter-buttons {
     display: flex;
-    gap: 15px; 
+    gap: 10px; 
     height: 45px;
 }
 
 .filter-button {
     display: flex;
     align-items: center;
-    gap: 15px;      /* espace entre l'icône et le texte */
+    gap: 10px;      /* espace entre l'icône et le texte */
     padding: 4px 19px 4px 19px;
     background: white;
     border: 2px solid #d9d9d9;
     border-radius: 25px; 
     color: #000000;
-    font-size: 14px;
+    font-size: 17px;
     font-weight: 700;
 }
 
@@ -283,7 +286,7 @@ h1 {
     display: flex;
     margin-top: 33px;
     flex-wrap: wrap;
-    align-content: space-between;
+    justify-content: space-between;
     gap: 25px;
     padding-bottom: 15px;
 }
@@ -297,7 +300,7 @@ h1 {
 }
 
 .houses-cards .card-content {
-    width: 90%;
+    width: 96%;
     padding-left: 15px;
     display: flex;
     flex-direction: column;
@@ -393,6 +396,7 @@ h1 {
     grid-template-columns: repeat(4, 1fr);
     flex-wrap: wrap;
     gap: 10px;
+    background-color: white;
 }
 
 .activites-title {
@@ -422,20 +426,21 @@ h1 {
 /********************************footer*******************************/
 
 .footer {
-  display: flex;           
-  background-color: #f2f2f2;
-  padding: 20px;           
-  gap: 300px;       /* espace entre les colonnes */
+    display: flex;           
+    background-color: #f2f2f2;         
+    gap: 240px;       /* espace entre les colonnes */
+    padding: 5px 20px 20px 20px;
+
 }
 
 .footer-column h3 {
-  font-weight: bold;
-  margin-bottom: 20px; 
-
+    font-weight: bold;
+    margin-bottom: 20px; 
+    font-size: 18px;
 }
 
 .footer-column p {
-  margin-bottom: 10px;         
+    margin-bottom: 10px;         
 }
 
 
