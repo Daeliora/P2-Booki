@@ -417,6 +417,7 @@ h1 {
     border-radius: 20px;
     height: 436px;
     width: 96%;
+    padding: 0px;
 }
 
 .activites-card .card-title {
