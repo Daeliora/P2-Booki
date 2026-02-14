@@ -443,29 +443,27 @@ h1 {
 
 
 
-/* Adaptabilité mobile (responsive) */
-@media (max-width: 768px) {
-  .footer {
-    flex-direction: column; 
-    gap: 30px;
-  }
-}
-
-
-
-
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    
+    .main-container {
+        padding: 0px;
+    }
+    
     .hebergements-and-populaires {
         flex-direction: column;
     }
 
     .hebergements {
         width: 100%;
+    }
+
+    .houses-cards img {
+        width: 250px;
     }
 
     .populaires {
@@ -477,6 +475,7 @@ h1 {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+
     }
 
     .populaires-cards a {
@@ -490,9 +489,38 @@ h1 {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .activites {
+        padding-top: 0px;
+    }
+
+    .activites-card .card {
+        height: 270px;
+    }
+
+    .activites-card img {
+        height: 200px;
+    }
+
+    .footer {
+        gap: 140px;
+    }
+
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    .footer {
+    flex-direction: column; 
+    gap: 30px;
+  }
+
+  .main-container {
+    padding: 0px;
+  }
+
+  body {
+    padding: 0px;
+  }
+
 }
