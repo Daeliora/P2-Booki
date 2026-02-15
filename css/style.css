@@ -149,7 +149,6 @@ h1 {
 
 .icon-container {
     padding: 15px 18px;
-    
     color: #000;
 }
 
@@ -160,7 +159,7 @@ h1 {
     font-size: 16px;
     font-weight: bold;
     background-color: white; /* Fond blanc pour la saisie */
-    width: 160px;
+   
     text-align: center;
 }
 
@@ -618,10 +617,42 @@ h1 {
     color: white;
     }
 
-    
+    .search-input {
+        width: 100%;
+    }
 
-   
+/*partie hébergements*/
+    .houses-cards img {
+        width: 305px;
+    }
 
+    .hebergements-and-populaires .hebergements {
+        background-color: white;
+        order: 2;
+    }
+
+/*partie populaires*/
+    .hebergements-and-populaires section {
+        border-radius: 0px
+    }
+    .populaires {
+        background-color: #F2F2F2;
+        order: 1;
+        margin: 0px;
+    }
+
+    .populaires-cards{
+    display : unset;
+    }
+
+/*partie activités*/
+    .activites-card {
+        display: block;
+    }
+
+    .activites-card .card {
+        margin-bottom: 15px;
+    }
 
     .footer {
         flex-direction: column; 
