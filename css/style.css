@@ -140,7 +140,7 @@ h1 {
 .search-bar {
     margin-top: 15px;
     display: inline-flex;
-    align-items: center;
+    align-items: stretch; /*pour bien s'étirer sur la hauteur*/
     background-color: #f2f2f2; /* zone de l'icône */
     border-radius: 15px;       
     overflow: hidden;          /* Pour que le bouton ne dépasse pas des arrondis */
@@ -169,17 +169,17 @@ h1 {
 }
 .search-button {
     border: none;
+    background-color: #0065FC;
+    padding: 0px 5px;
 }
 
 .text-button {
-    background-color: #0065FC; 
+     
     color: white;
-    border: none;
     padding: 15px 20px;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    border-radius: 0 15px 15px 0; 
 }
 
 .search-button i {
