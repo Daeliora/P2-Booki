@@ -62,9 +62,6 @@ a {
 
 body {
     margin: 0;
-    padding-left: 50px;
-    padding-right: 50px;
-    gap: 35px;
 }
 
 /************************************ header ************************************/
@@ -450,7 +447,12 @@ h1 {
 /****** Media queries ***********/
 /****************** Medium devices (tablets, less/equal than 1024px) **************************/
 @media (max-width: 1024px) {
-    
+    body {
+    padding-left: 50px;
+    padding-right: 50px;
+    gap: 35px;
+}
+
     .main-container {
         padding: 0px;
     }
