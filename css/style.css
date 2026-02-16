@@ -95,8 +95,8 @@ header {
     padding-top: 0px;
 }
 
-/* barre bleue cachée par défaut */
-.menu-item::before {
+
+.menu-item::before {    /* barre bleue cachée par défaut */
     content: "";
     position: absolute;
     top: -23px;
@@ -105,10 +105,8 @@ header {
     height: 2px;
     background-color: #0065fc;
     opacity: 0;
-
 }
 
-/* effet hover */
 .menu-item:hover {
     color: #0065fc;
 }
@@ -164,7 +162,7 @@ h1 {
 
 .search-input::placeholder {  /* :: -> pour Pseudo-éléments*/
     color: #000000;
-    opacity: 1; /* Nécessaire pour Firefox qui baisse l'opacité par défaut */
+    opacity: 1; /* pour firefox qui baisse l'opacité par défaut */
 }
 .search-button {
     border: none;
@@ -246,14 +244,14 @@ h1 {
 
 .info-icon {
     color: #0065FC; 
-    border-radius: 50%; /* Forme ronde */
+    border-radius: 50%; /* forme ronde */
     border: 1px solid #d9d9d9;
     width: 24px;
     height: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 10px; /* Taille de l'icône */ 
+    font-size: 10px; /* taille de l'icône */ 
 }
 
 .info-text {
@@ -337,7 +335,7 @@ h1 {
     font-weight: 700;
     width: 200px;
     height: 21px;
-    cursor: pointer; /*pour cliquer*/
+    cursor: pointer; 
 }
 
 
@@ -404,7 +402,7 @@ h1 {
 .activites-title {
     font-size: 22px;
     font-weight: 700;
-    margin-top: 60px;   /* ça à l'air d'être 2 fois 30px*/
+    margin-top: 60px; 
     margin-bottom: 30px;
 }
 
