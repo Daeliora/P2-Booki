@@ -72,20 +72,18 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
+    padding: 20px 0px;
     margin-bottom: 30px;
 }
 
 .logo {
     height: 20px;
-    margin-left: -37px;
     margin-top: 5px;
 }
 
 .menu {
     display: flex;
     gap: 30px;
-    margin-right: -40px;
 }
 
 .menu-item {
